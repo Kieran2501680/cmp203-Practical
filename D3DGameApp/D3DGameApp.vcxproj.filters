@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Panels">
+      <UniqueIdentifier>{A80D95C9-94AF-BF9F-7D6A-D3F369AB46F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{d821c405-6d8a-4301-9f5b-249e1f5d1cf0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\DefaultGameLayer.h" />
+    <ClInclude Include="src\D3DCMP301\D3DScene\D3DScene.h" />
+    <ClInclude Include="src\D3DCMP301\D3DScene\Triangle\Triangle.h" />
+    <ClInclude Include="src\D3DCMP301\D3DScene\LightsAndShadows\LightAndShadow.h" />
+    <ClInclude Include="src\D3DCMP301\D3DScene\PostProcess\PostProcessChain.h" />
+    <ClInclude Include="src\D3DCMP301\D3DScene\PostProcess\ChromaticAberration\ChAberrEffect.h" />
+    <ClInclude Include="src\D3DCMP301\D3DScene\Raytracing\Raytracer.h" />
+    <ClInclude Include="src\D3DCMP301\D3DScene\AsyncCompute\AsyncCompute.h" />
+    <ClInclude Include="src\D3DCMP301\D3DScene\LightsAndShadows\ForwardPass\ForwardPass.h" />
+    <ClInclude Include="src\D3DCMP301\D3DScene\LightsAndShadows\DefferedPass\DeferredPass.h" />
+    <ClInclude Include="src\D3DCMP301\D3DScene\BindlessRootSignature.h" />
+    <ClInclude Include="src\D3DCMP301\D3DScene\LightsAndShadows\Vertex.h" />
+    <ClInclude Include="src\D3DCMP301\D3DScene\D3DResource.h" />
+    <ClInclude Include="src\D3DCMP301\D3DScene\LightsAndShadows\Meshlets\Meshlets.h" />
+    <ClInclude Include="src\D3DCMP301\D3DScene\LightsAndShadows\Meshlets\meshoptimizer\meshoptimizer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\D3DGameApp.cpp" />
+    <ClCompile Include="src\DefaultGameLayer.cpp" />
+    <ClCompile Include="src\D3DCMP301\D3DScene\D3DScene.cpp" />
+    <ClCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\Meshlets\meshoptimizer\allocator.cpp" />
+    <ClCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\Meshlets\meshoptimizer\clusterizer.cpp" />
+    <ClCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\Meshlets\meshoptimizer\indexanalyzer.cpp" />
+    <ClCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\Meshlets\meshoptimizer\indexcodec.cpp" />
+    <ClCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\Meshlets\meshoptimizer\indexgenerator.cpp" />
+    <ClCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\Meshlets\meshoptimizer\overdrawoptimizer.cpp" />
+    <ClCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\Meshlets\meshoptimizer\partition.cpp" />
+    <ClCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\Meshlets\meshoptimizer\quantization.cpp" />
+    <ClCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\Meshlets\meshoptimizer\rasterizer.cpp" />
+    <ClCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\Meshlets\meshoptimizer\simplifier.cpp" />
+    <ClCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\Meshlets\meshoptimizer\spatialorder.cpp" />
+    <ClCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\Meshlets\meshoptimizer\stripifier.cpp" />
+    <ClCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\Meshlets\meshoptimizer\vcacheoptimizer.cpp" />
+    <ClCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\Meshlets\meshoptimizer\vertexcodec.cpp" />
+    <ClCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\Meshlets\meshoptimizer\vertexfilter.cpp" />
+    <ClCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\Meshlets\meshoptimizer\vfetchoptimizer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="src\D3DCMP301\D3DScene\PostProcess\ChromaticAberration\ChromaticAberration.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\DepthOnlyPS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\DepthOnlyVS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="src\D3DCMP301\D3DScene\Triangle\Shaders\PS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="src\D3DCMP301\D3DScene\Triangle\Shaders\VS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\ForwardPass\TextureLitShadowVS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\ForwardPass\TextureLitShadowPS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="src\D3DCMP301\D3DScene\Raytracing\RayLibrary.hlsl" />
+    <FxCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\DefferedPass\GBufferPS.hlsl" />
+    <FxCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\DefferedPass\GBufferResolveCS.hlsl" />
+    <FxCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\DefferedPass\GBufferVS.hlsl" />
+    <FxCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\Meshlets\AmplificationShader.hlsl" />
+    <FxCompile Include="src\D3DCMP301\D3DScene\LightsAndShadows\Meshlets\MeshShader.hlsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\D3DCMP301\D3DScene\LightsAndShadows\LightingFunctionsHLSL\LightFunctions.hlsli" />
+    <None Include="src\D3DCMP301\D3DScene\LightsAndShadows\LightingFunctionsHLSL\LSSharedStructs.hlsli" />
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

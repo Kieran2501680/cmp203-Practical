@@ -1,0 +1,8 @@
+[submodule "skateboard"]
+	path = skateboard_engine
+	url = https://github.com/Abertay-University-SDI/skateboard_engine_2025
+	branch = main
+[submodule "skateboard_engine"]
+	path = skateboard_engine
+	url = https://github.com/Abertay-University-SDI/skateboard_engine_2025.git
+	branch = main

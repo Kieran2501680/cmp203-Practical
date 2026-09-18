@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Toolbox", "Toolbox\Toolbox.vcxproj", "{579FF3B1-CD33-443C-9991-78E9C7F1215F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C54B388E-B103-7ADB-1A0B-533706E214CC} = {C54B388E-B103-7ADB-1A0B-533706E214CC}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Skateboard", "Skateboard\Skateboard.vcxproj", "{C54B388E-B103-7ADB-1A0B-533706E214CC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6D3B3405-FF34-4671-867F-1FEA927B67C6} = {6D3B3405-FF34-4671-867F-1FEA927B67C6}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Windows", "Platform\Windows\Windows.vcxproj", "{6D3B3405-FF34-4671-867F-1FEA927B67C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platform", "Platform", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+		Ship|x64 = Ship|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{579FF3B1-CD33-443C-9991-78E9C7F1215F}.Debug|x64.ActiveCfg = Debug|x64
+		{579FF3B1-CD33-443C-9991-78E9C7F1215F}.Debug|x64.Build.0 = Debug|x64
+		{579FF3B1-CD33-443C-9991-78E9C7F1215F}.Release|x64.ActiveCfg = Release|x64
+		{579FF3B1-CD33-443C-9991-78E9C7F1215F}.Release|x64.Build.0 = Release|x64
+		{579FF3B1-CD33-443C-9991-78E9C7F1215F}.Ship|x64.ActiveCfg = Ship|x64
+		{579FF3B1-CD33-443C-9991-78E9C7F1215F}.Ship|x64.Build.0 = Ship|x64
+		{C54B388E-B103-7ADB-1A0B-533706E214CC}.Debug|x64.ActiveCfg = Debug|x64
+		{C54B388E-B103-7ADB-1A0B-533706E214CC}.Debug|x64.Build.0 = Debug|x64
+		{C54B388E-B103-7ADB-1A0B-533706E214CC}.Release|x64.ActiveCfg = Release|x64
+		{C54B388E-B103-7ADB-1A0B-533706E214CC}.Release|x64.Build.0 = Release|x64
+		{C54B388E-B103-7ADB-1A0B-533706E214CC}.Ship|x64.ActiveCfg = Ship|x64
+		{C54B388E-B103-7ADB-1A0B-533706E214CC}.Ship|x64.Build.0 = Ship|x64
+		{6D3B3405-FF34-4671-867F-1FEA927B67C6}.Debug|x64.ActiveCfg = Debug|x64
+		{6D3B3405-FF34-4671-867F-1FEA927B67C6}.Debug|x64.Build.0 = Debug|x64
+		{6D3B3405-FF34-4671-867F-1FEA927B67C6}.Release|x64.ActiveCfg = Release|x64
+		{6D3B3405-FF34-4671-867F-1FEA927B67C6}.Release|x64.Build.0 = Release|x64
+		{6D3B3405-FF34-4671-867F-1FEA927B67C6}.Ship|x64.ActiveCfg = Ship|x64
+		{6D3B3405-FF34-4671-867F-1FEA927B67C6}.Ship|x64.Build.0 = Ship|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6D3B3405-FF34-4671-867F-1FEA927B67C6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E96D103F-3C20-428B-8BF4-81AFE63E86F1}
+	EndGlobalSection
+EndGlobal

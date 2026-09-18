@@ -1,0 +1,102 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameApp", "GameApp\GameApp.vcxproj", "{80D05747-ECAF-D6E2-F5C7-61B961263D44}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C54B388E-B103-7ADB-1A0B-533706E214CC} = {C54B388E-B103-7ADB-1A0B-533706E214CC}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Skateboard", "skateboard_engine\Skateboard\Skateboard.vcxproj", "{C54B388E-B103-7ADB-1A0B-533706E214CC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6D3B3405-FF34-4671-867F-1FEA927B67C6} = {6D3B3405-FF34-4671-867F-1FEA927B67C6}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Box2D", "skateboard_engine\Skateboard\vendor\Box2D\Box2D.vcxproj", "{F97F5BB5-578E-4E0B-B0B0-6E98555BAAC1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Jolt", "skateboard_engine\Skateboard\vendor\Jolt\Jolt.vcxproj", "{6A3A7AED-8EDF-4960-BCDA-D367BDCB4390}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PhysicsEngines", "PhysicsEngines", "{80EE66A2-07E4-43D6-83B7-2C41570BAFBF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoreEngine", "CoreEngine", "{9812B030-0F57-49A0-8C8F-BD347CD52CC2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{2FE7BB12-8A18-4AFC-BB23-BE76E9F42D06}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Windows", "skateboard_engine\Platform\Windows\Windows.vcxproj", "{6D3B3405-FF34-4671-867F-1FEA927B67C6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "D3DGameApp", "D3DGameApp\D3DGameApp.vcxproj", "{4A2AB0CE-A6FB-447C-9C99-E5CF91E69D66}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C54B388E-B103-7ADB-1A0B-533706E214CC} = {C54B388E-B103-7ADB-1A0B-533706E214CC}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Toolbox", "skateboard_engine\Toolbox\Toolbox.vcxproj", "{579FF3B1-CD33-443C-9991-78E9C7F1215F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C54B388E-B103-7ADB-1A0B-533706E214CC} = {C54B388E-B103-7ADB-1A0B-533706E214CC}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows = Debug|Windows
+		Release|Windows = Release|Windows
+		Ship|Windows = Ship|Windows
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80D05747-ECAF-D6E2-F5C7-61B961263D44}.Debug|Windows.ActiveCfg = Debug|x64
+		{80D05747-ECAF-D6E2-F5C7-61B961263D44}.Debug|Windows.Build.0 = Debug|x64
+		{80D05747-ECAF-D6E2-F5C7-61B961263D44}.Release|Windows.ActiveCfg = Release|x64
+		{80D05747-ECAF-D6E2-F5C7-61B961263D44}.Release|Windows.Build.0 = Release|x64
+		{80D05747-ECAF-D6E2-F5C7-61B961263D44}.Ship|Windows.ActiveCfg = Ship|x64
+		{80D05747-ECAF-D6E2-F5C7-61B961263D44}.Ship|Windows.Build.0 = Ship|x64
+		{C54B388E-B103-7ADB-1A0B-533706E214CC}.Debug|Windows.ActiveCfg = Debug|x64
+		{C54B388E-B103-7ADB-1A0B-533706E214CC}.Debug|Windows.Build.0 = Debug|x64
+		{C54B388E-B103-7ADB-1A0B-533706E214CC}.Release|Windows.ActiveCfg = Release|x64
+		{C54B388E-B103-7ADB-1A0B-533706E214CC}.Release|Windows.Build.0 = Release|x64
+		{C54B388E-B103-7ADB-1A0B-533706E214CC}.Ship|Windows.ActiveCfg = Ship|x64
+		{C54B388E-B103-7ADB-1A0B-533706E214CC}.Ship|Windows.Build.0 = Ship|x64
+		{F97F5BB5-578E-4E0B-B0B0-6E98555BAAC1}.Debug|Windows.ActiveCfg = Debug|x64
+		{F97F5BB5-578E-4E0B-B0B0-6E98555BAAC1}.Debug|Windows.Build.0 = Debug|x64
+		{F97F5BB5-578E-4E0B-B0B0-6E98555BAAC1}.Release|Windows.ActiveCfg = Release|x64
+		{F97F5BB5-578E-4E0B-B0B0-6E98555BAAC1}.Release|Windows.Build.0 = Release|x64
+		{F97F5BB5-578E-4E0B-B0B0-6E98555BAAC1}.Ship|Windows.ActiveCfg = Ship|x64
+		{F97F5BB5-578E-4E0B-B0B0-6E98555BAAC1}.Ship|Windows.Build.0 = Ship|x64
+		{6A3A7AED-8EDF-4960-BCDA-D367BDCB4390}.Debug|Windows.ActiveCfg = Debug|x64
+		{6A3A7AED-8EDF-4960-BCDA-D367BDCB4390}.Debug|Windows.Build.0 = Debug|x64
+		{6A3A7AED-8EDF-4960-BCDA-D367BDCB4390}.Release|Windows.ActiveCfg = Release|x64
+		{6A3A7AED-8EDF-4960-BCDA-D367BDCB4390}.Release|Windows.Build.0 = Release|x64
+		{6A3A7AED-8EDF-4960-BCDA-D367BDCB4390}.Ship|Windows.ActiveCfg = Ship|x64
+		{6A3A7AED-8EDF-4960-BCDA-D367BDCB4390}.Ship|Windows.Build.0 = Ship|x64
+		{6D3B3405-FF34-4671-867F-1FEA927B67C6}.Debug|Windows.ActiveCfg = Debug|x64
+		{6D3B3405-FF34-4671-867F-1FEA927B67C6}.Debug|Windows.Build.0 = Debug|x64
+		{6D3B3405-FF34-4671-867F-1FEA927B67C6}.Release|Windows.ActiveCfg = Release|x64
+		{6D3B3405-FF34-4671-867F-1FEA927B67C6}.Release|Windows.Build.0 = Release|x64
+		{6D3B3405-FF34-4671-867F-1FEA927B67C6}.Ship|Windows.ActiveCfg = Ship|x64
+		{6D3B3405-FF34-4671-867F-1FEA927B67C6}.Ship|Windows.Build.0 = Ship|x64
+		{4A2AB0CE-A6FB-447C-9C99-E5CF91E69D66}.Debug|Windows.ActiveCfg = Debug|x64
+		{4A2AB0CE-A6FB-447C-9C99-E5CF91E69D66}.Debug|Windows.Build.0 = Debug|x64
+		{4A2AB0CE-A6FB-447C-9C99-E5CF91E69D66}.Release|Windows.ActiveCfg = Release|x64
+		{4A2AB0CE-A6FB-447C-9C99-E5CF91E69D66}.Release|Windows.Build.0 = Release|x64
+		{4A2AB0CE-A6FB-447C-9C99-E5CF91E69D66}.Ship|Windows.ActiveCfg = Ship|x64
+		{4A2AB0CE-A6FB-447C-9C99-E5CF91E69D66}.Ship|Windows.Build.0 = Ship|x64
+		{579FF3B1-CD33-443C-9991-78E9C7F1215F}.Debug|Windows.ActiveCfg = Debug|x64
+		{579FF3B1-CD33-443C-9991-78E9C7F1215F}.Debug|Windows.Build.0 = Debug|x64
+		{579FF3B1-CD33-443C-9991-78E9C7F1215F}.Release|Windows.ActiveCfg = Release|x64
+		{579FF3B1-CD33-443C-9991-78E9C7F1215F}.Release|Windows.Build.0 = Release|x64
+		{579FF3B1-CD33-443C-9991-78E9C7F1215F}.Ship|Windows.ActiveCfg = Ship|x64
+		{579FF3B1-CD33-443C-9991-78E9C7F1215F}.Ship|Windows.Build.0 = Ship|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C54B388E-B103-7ADB-1A0B-533706E214CC} = {9812B030-0F57-49A0-8C8F-BD347CD52CC2}
+		{F97F5BB5-578E-4E0B-B0B0-6E98555BAAC1} = {80EE66A2-07E4-43D6-83B7-2C41570BAFBF}
+		{6A3A7AED-8EDF-4960-BCDA-D367BDCB4390} = {80EE66A2-07E4-43D6-83B7-2C41570BAFBF}
+		{2FE7BB12-8A18-4AFC-BB23-BE76E9F42D06} = {9812B030-0F57-49A0-8C8F-BD347CD52CC2}
+		{6D3B3405-FF34-4671-867F-1FEA927B67C6} = {2FE7BB12-8A18-4AFC-BB23-BE76E9F42D06}
+		{579FF3B1-CD33-443C-9991-78E9C7F1215F} = {9812B030-0F57-49A0-8C8F-BD347CD52CC2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B08E0E86-0498-420B-9D02-3BA9C6D5DFF5}
+	EndGlobalSection
+EndGlobal

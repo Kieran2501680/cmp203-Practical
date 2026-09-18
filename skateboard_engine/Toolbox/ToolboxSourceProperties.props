@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <INTRNL_SKTBD_ENGINE_DIR>$(ProjectDir)..\</INTRNL_SKTBD_ENGINE_DIR>
+    <INTRNL_SKTBD_PLATFORM_DIR>$(INTRNL_SKTBD_ENGINE_DIR)Platform\</INTRNL_SKTBD_PLATFORM_DIR>
+    <INTRNL_SKTBD_ENGINE_INCLUDES>$(INTRNL_SKTBD_PLATFORM_DIR);$(INTRNL_SKTBD_ENGINE_DIR)Skateboard\vendor\spdlog\include;$(INTRNL_SKTBD_ENGINE_DIR)Skateboard\src;$(INTRNL_SKTBD_ENGINE_DIR)Skateboard\vendor;$(INTRNL_SKTBD_ENGINE_DIR)Skateboard\vendor\simdjson;$(INTRNL_SKTBD_ENGINE_DIR)Skateboard\vendor\imgui;$(INTRNL_SKTBD_ENGINE_DIR)Skateboard\vendor\entt\include;$(INTRNL_SKTBD_ENGINE_DIR)Skateboard\vendor\glm;$(INTRNL_SKTBD_ENGINE_DIR)Skateboard\vendor\Box2d\include;$(SKTBD_ENGINE_DIR)Skateboard\vendor\Jolt\;</INTRNL_SKTBD_ENGINE_INCLUDES>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup Label="Globals">
+    <Microsoft_Direct3D_D3D12_D3D12SDKPath>.\Dependencies\</Microsoft_Direct3D_D3D12_D3D12SDKPath>
+    <Microsoft_Direct3D_D3D12_SkipLibraryCopy>false</Microsoft_Direct3D_D3D12_SkipLibraryCopy>
+    <Microsoft_Direct3D_D3D12_SkipDebugLayerCopy>false</Microsoft_Direct3D_D3D12_SkipDebugLayerCopy>
+    <Microsoft_Direct3D_D3D12_SkipIncludeDir>false</Microsoft_Direct3D_D3D12_SkipIncludeDir>
+    <Microsoft_Direct3D_DXC_SkipLibraryCopy>false</Microsoft_Direct3D_DXC_SkipLibraryCopy>
+    <Microsoft_Direct3D_DXC_SkipIncludeDir>false</Microsoft_Direct3D_DXC_SkipIncludeDir>
+    <Microsoft_Direct3D_DXC_CopyLocation>.\Dependencies\</Microsoft_Direct3D_DXC_CopyLocation>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="SKTBD_ENGINE_DIR">
+      <Value>$(SKTBD_ENGINE_DIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="SKTBD_PLATFORM_DIR">
+      <Value>$(SKTBD_PLATFORM_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SKTBD_ENGINE_INCLUDES">
+      <Value>$(SKTBD_ENGINE_INCLUDES)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
