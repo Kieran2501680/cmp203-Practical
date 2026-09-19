@@ -11,6 +11,7 @@ TutorialScene::TutorialScene(const std::string& name):
 	Scene(name)
 {
 	Renderer.Init();
+	// Disable lighting, until we have a light in the scene
 	Renderer.UnsetPipelineFlags(CMP203::LIT);
 }
 
