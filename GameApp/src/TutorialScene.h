@@ -13,6 +13,10 @@ public:
 	virtual void OnHandleInput(Skateboard::TimeManager* time) override;
 	virtual void OnUpdate(Skateboard::TimeManager* time) override;
 	virtual void OnRender() override;
-
+	virtual void OnEvent(Event& e) override;
 	virtual void OnImGuiRender() override;
+
+private:
+	bool bWireframe = false;
+	CMP203::Renderer203 Renderer;
 };
