@@ -61,6 +61,7 @@ void TutorialScene::OnImGuiRender()
 			Renderer.UnsetPipelineFlags(CMP203::PipelineFlags::WIREFRAME);
 
 	}
+	ImGui::ShowDemoWindow();
 	ImGui::End();
 }
 
@@ -74,8 +75,17 @@ void TutorialScene::DrawTriangles(float3 colour)
 
 	//loop 3 times for each vertex
 
-	for (int i = 0; i < 3; i++) {
+	int vectStart = m_vertices.size();
 
+	for (int i = 0; i < 3; i++) {
+		float size = rand() % 3;
+		size / 2;
+
+		CMP203::Vertex vert{ float3(positions[i].x * size, positions[i].y * size, 0.f) };
+		vert.Colour = colour;
+
+		m_indicies.push_back(vectStart + i);
+		m_vertices.push_back(vert);
 	}
 }
 
@@ -113,7 +123,15 @@ void TutorialScene::DrawQuad(float3 colour)
 	}
 }
 
-void TutorialScene::DrawTriangleFan(float3 colour)
+void TutorialScene::DrawTriangleFanQuad(float3 colour)
 {
+	std::vector<CMP203::Vertex> localVertices;
+
+	std::vector<float3> positions = {
+		{-1.f, 1.f, 0.f},
+		{-1.f, -1.f, 0.f},
+		{1.f, -1.f, 0.f},
+		{1.f, 1.f, 0.f}
+	};
 
 }

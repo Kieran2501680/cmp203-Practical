@@ -19,13 +19,15 @@ public:
 private:
 	void DrawTriangles(float3 colour);
 	void DrawQuad(float3 colour);
-	void DrawTriangleFan(float3 colour);
+	void DrawTriangleFanQuad(float3 colour);
 
 
 	bool bWireframe = false;
+	bool bSelected = false;
 	CMP203::Renderer203 Renderer;
 
 	std::vector<CMP203::Vertex> m_vertices;
+	int m_selectedVert;
 
 	std::vector<uint32_t> m_indicies;
 };
