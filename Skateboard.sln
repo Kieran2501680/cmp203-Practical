@@ -25,11 +25,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Windows", "skateboard_engine\Platform\Windows\Windows.vcxproj", "{6D3B3405-FF34-4671-867F-1FEA927B67C6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "D3DGameApp", "D3DGameApp\D3DGameApp.vcxproj", "{4A2AB0CE-A6FB-447C-9C99-E5CF91E69D66}"
-	ProjectSection(ProjectDependencies) = postProject
-		{C54B388E-B103-7ADB-1A0B-533706E214CC} = {C54B388E-B103-7ADB-1A0B-533706E214CC}
-	EndProjectSection
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Toolbox", "skateboard_engine\Toolbox\Toolbox.vcxproj", "{579FF3B1-CD33-443C-9991-78E9C7F1215F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{C54B388E-B103-7ADB-1A0B-533706E214CC} = {C54B388E-B103-7ADB-1A0B-533706E214CC}
@@ -72,12 +67,6 @@ Global
 		{6D3B3405-FF34-4671-867F-1FEA927B67C6}.Release|Windows.Build.0 = Release|x64
 		{6D3B3405-FF34-4671-867F-1FEA927B67C6}.Ship|Windows.ActiveCfg = Ship|x64
 		{6D3B3405-FF34-4671-867F-1FEA927B67C6}.Ship|Windows.Build.0 = Ship|x64
-		{4A2AB0CE-A6FB-447C-9C99-E5CF91E69D66}.Debug|Windows.ActiveCfg = Debug|x64
-		{4A2AB0CE-A6FB-447C-9C99-E5CF91E69D66}.Debug|Windows.Build.0 = Debug|x64
-		{4A2AB0CE-A6FB-447C-9C99-E5CF91E69D66}.Release|Windows.ActiveCfg = Release|x64
-		{4A2AB0CE-A6FB-447C-9C99-E5CF91E69D66}.Release|Windows.Build.0 = Release|x64
-		{4A2AB0CE-A6FB-447C-9C99-E5CF91E69D66}.Ship|Windows.ActiveCfg = Ship|x64
-		{4A2AB0CE-A6FB-447C-9C99-E5CF91E69D66}.Ship|Windows.Build.0 = Ship|x64
 		{579FF3B1-CD33-443C-9991-78E9C7F1215F}.Debug|Windows.ActiveCfg = Debug|x64
 		{579FF3B1-CD33-443C-9991-78E9C7F1215F}.Debug|Windows.Build.0 = Debug|x64
 		{579FF3B1-CD33-443C-9991-78E9C7F1215F}.Release|Windows.ActiveCfg = Release|x64

@@ -17,6 +17,15 @@ public:
 	virtual void OnImGuiRender() override;
 
 private:
+	void DrawTriangles(float3 colour);
+	void DrawQuad(float3 colour);
+	void DrawTriangleFan(float3 colour);
+
+
 	bool bWireframe = false;
 	CMP203::Renderer203 Renderer;
+
+	std::vector<CMP203::Vertex> m_vertices;
+
+	std::vector<uint32_t> m_indicies;
 };
